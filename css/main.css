@@ -1,9 +1,140 @@
-/* fonts setting */
+/* This is to reset the default styles for html elements */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
 
 body {
+	line-height: 1;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+blockquote, q {
+	quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* General setting */
+body {
     font-family: 'Karla';
+    background-color: #f3f0e9;
 }
 
 h1, h2, h3, nav {
     font-family: 'Lato';
+    margin: 0;
+}
+
+/* Mobile Version */
+/* font setting */
+h1 {
+    font-size: 2.027rem;
+    font-weight: 900;
+}
+
+h2 {
+    font-size: 1.802rem;
+}
+
+h3 {
+    font-size: 1.424rem;
+}
+
+a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.btn-light {
+    background-color: #ffffff;
+    color: #000000;
+    font-weight: 700;
+    padding: 15px 20px;
+    margin-top: 20px;
+}
+
+/* navbar setting */
+.nav-wrapper {
+    background-color: #000000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo-container img {
+    padding: 20px;
+}
+
+.nav-list-container {
+    display: flex;
+    gap: 40px;
+    margin: 20px;
+}
+
+/* hero section */
+.hero-section {
+    background-image: url(../images/hero-background.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-wrapper {
+    backdrop-filter: brightness(30%);
+    padding: 10rem;   
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+/* welcome section */
+.welcome-wrapper {
+    padding: 0 10px;
+    overflow: hidden;
+}
+
+.welcome-images-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
 }
