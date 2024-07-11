@@ -1,0 +1,9 @@
+/* fonts setting */
+
+body {
+    font-family: 'Karla';
+}
+
+h1, h2, h3, nav {
+    font-family: 'Lato';
+}
