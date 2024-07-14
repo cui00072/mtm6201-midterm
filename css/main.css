@@ -309,12 +309,6 @@ a:hover {
     }
 }
 
-/* .icon {
-    transition: transform 1s;
-} */
-
-
-
 /* menu locations section */
 .menu-locations-wrapper {
     background-image: linear-gradient(rgba(10, 10, 10, 0.5), rgba(14, 13, 13, 0.5)),url(../images/coffee-shop.jpeg);
