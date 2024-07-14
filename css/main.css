@@ -281,6 +281,16 @@ a:hover {
 
 .icon {
     padding-bottom: 1rem;
+    transition: transform 1s;
+}
+
+.icon:hover {
+    animation: fadeIn 1s ease-in-out;
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transform: translateY(-5px);
 }
 
 .offer-wrapper .icon img{
@@ -289,6 +299,21 @@ a:hover {
     margin: 1rem;
     vertical-align: top;
 }
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* .icon {
+    transition: transform 1s;
+} */
+
+
 
 /* menu locations section */
 .menu-locations-wrapper {
@@ -498,28 +523,6 @@ footer {
         grid-row-gap: 16px;
         padding-bottom: 3rem;
     }  
-
-    @keyframes fadeIn {
-        from {
-            opacity: 0;
-        }
-        to {
-            opacity: 1;
-        }
-    }
-
-    .icon {
-        transition: transform 1s;
-    }
-
-    .icon:hover {
-        animation: fadeIn 1s ease-in-out;
-        background: #f9f9f9;
-        padding: 20px;
-        border-radius: 8px;
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-        transform: translateY(-5px);
-    }
 
     .icon:nth-child(1) {
         grid-area: 1 / 1 / 2 / 3;
